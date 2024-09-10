@@ -1,0 +1,66 @@
+/***********************************************************
+************************************************************
+                        GLOBAL STYLES
+************************************************************
+***********************************************************/
+
+/***********************************************************
+** These styles will be the site's defaults, so they should
+** cover every repeating style. Only very specific styles
+** assigned to IDs or for specific functions should be in
+** other CSS files.
+***********************************************************/
+
+/* ====================== VARIABLES ===================== */
+/*
+** [:root] has higher specificity than [html], and is
+** typically just for custom CSS variables.
+*/
+:root {
+/* These colors make up the color palette for the entire website. */
+    --color1: #16325B;
+    --color2: #227B94;
+    --color3: #78B7D0;
+    --color4: #FFDC7F;
+}
+
+/* ####### FONT & TEXT STYLES ####### */
+/*
+** These set the default styles for all text that appear on
+** the site.
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color4);
+}
+
+h3 {
+    font-style: italic;
+}
+
+p {
+    color: white;
+}
+
+
+
+/* Instead of individually assigning the flex display to multiple elements, just give those elements the corresponding class. */
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    background-color: var(--color2);
+}
